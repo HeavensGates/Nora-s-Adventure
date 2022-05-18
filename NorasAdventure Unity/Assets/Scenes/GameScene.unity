@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -268, y: 0}
+  m_AnchoredPosition: {x: -219, y: 0}
   m_SizeDelta: {x: 210, y: 430}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &271659970
@@ -237,6 +237,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271659970}
   m_CullTransparentMesh: 1
+--- !u!1 &282646008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282646009}
+  m_Layer: 5
+  m_Name: FrogAreaNora
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &282646009
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282646008}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1265764124}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -473, y: -297}
+  m_SizeDelta: {x: 210, y: 430}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &282770559
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &668378019
 RectTransform:
   m_ObjectHideFlags: 0
@@ -567,7 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.95686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1275,6 +1311,7 @@ GameObject:
   - component: {fileID: 1140868354}
   - component: {fileID: 1140868353}
   - component: {fileID: 1140868356}
+  - component: {fileID: 1140868357}
   m_Layer: 5
   m_Name: PortalHomeSignButton
   m_TagString: Untagged
@@ -1432,6 +1469,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1140868357}
+        m_TargetAssemblyTypeName: MoveToPositionOnClick, Assembly-CSharp
+        m_MethodName: MoveToPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1140868356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,6 +1496,20 @@ MonoBehaviour:
   animator: {fileID: 2107866350}
   parameterName: Level
   parameterValue: 1
+--- !u!114 &1140868357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140868351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152b152b1879af2409ad2c30e3c2f3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionToMoveTo: {fileID: 282646009}
+  transformToMove: {fileID: 108101448}
 --- !u!1 &1144801671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1643,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1187808979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1187808980}
+  m_Layer: 5
+  m_Name: CampPosNora
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1187808980
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187808979}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2010686112}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -219, y: 0}
+  m_SizeDelta: {x: 210, y: 430}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &1216175172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,6 +2028,7 @@ RectTransform:
   - {fileID: 1904192677}
   - {fileID: 1471457096}
   - {fileID: 1341040428}
+  - {fileID: 282646009}
   m_Father: {fileID: 791260057}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1950,6 +2050,7 @@ GameObject:
   - component: {fileID: 1341040431}
   - component: {fileID: 1341040430}
   - component: {fileID: 1341040429}
+  - component: {fileID: 1341040433}
   m_Layer: 5
   m_Name: CampSignButton
   m_TagString: Untagged
@@ -2122,6 +2223,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1341040433}
+        m_TargetAssemblyTypeName: MoveToPositionOnClick, Assembly-CSharp
+        m_MethodName: MoveToPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1341040433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341040427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152b152b1879af2409ad2c30e3c2f3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionToMoveTo: {fileID: 1187808980}
+  transformToMove: {fileID: 108101448}
 --- !u!1 &1471457095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,6 +2838,7 @@ RectTransform:
   m_Children:
   - {fileID: 1140868352}
   - {fileID: 1776339635}
+  - {fileID: 1187808980}
   m_Father: {fileID: 791260057}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3133,7 +3261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e1841d1b365c0d94da27383698df2164, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bf824c4f4c3e84409088ed13760f71e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

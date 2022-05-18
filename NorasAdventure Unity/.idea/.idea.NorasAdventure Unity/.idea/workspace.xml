@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0629fa85-eaee-4c0a-b726-b2177da8892e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NorasAdventure Unity/.idea/.idea.NorasAdventure Unity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NorasAdventure Unity/.idea/.idea.NorasAdventure Unity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NorasAdventure Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NorasAdventure Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
@@ -38,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ImageFade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorInt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartGameButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LoadScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -48,6 +48,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorInt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ImageFade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" />
       </list>
     </option>
   </component>
@@ -64,6 +65,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -90,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652715743534</updated>
       <workItem from="1652715762795" duration="1301000" />
-      <workItem from="1652857436181" duration="659000" />
+      <workItem from="1652857436181" duration="1657000" />
     </task>
     <servers />
   </component>
