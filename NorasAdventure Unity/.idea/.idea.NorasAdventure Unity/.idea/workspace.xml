@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0629fa85-eaee-4c0a-b726-b2177da8892e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TransitionFadeInOut.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NorasAdventure Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NorasAdventure Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/GameScene/GameSceneBackground.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/GameScene/GameSceneBackground.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
@@ -40,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartGameButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LoadScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TransitionFadeInOut.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,6 +51,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ImageFade.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TransitionFadeInOut.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652715743534</updated>
       <workItem from="1652715762795" duration="1301000" />
-      <workItem from="1652857436181" duration="1657000" />
+      <workItem from="1652857436181" duration="3070000" />
     </task>
     <servers />
   </component>
