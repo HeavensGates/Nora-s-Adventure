@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
+  m_Name: AcidPotion
+  m_EditorClassIdentifier: 
+  recipe: 010000000200000005000000
+  potionIcon: {fileID: 21300000, guid: ed9207e0b3851c144be9ee108d34fb95, type: 3}
+  potionBackground: {fileID: 21300000, guid: d3c814c666b299140af5344673848dff, type: 3}

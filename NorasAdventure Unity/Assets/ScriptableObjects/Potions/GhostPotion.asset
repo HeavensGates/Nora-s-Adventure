@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
+  m_Name: GhostPotion
+  m_EditorClassIdentifier: 
+  recipe: 010000000200000004000000
+  potionIcon: {fileID: 21300000, guid: ef8ba31401f0a8d4e93a3756c45799a9, type: 3}
+  potionBackground: {fileID: 21300000, guid: a11e31335e6f8c64586378606016c8ec, type: 3}

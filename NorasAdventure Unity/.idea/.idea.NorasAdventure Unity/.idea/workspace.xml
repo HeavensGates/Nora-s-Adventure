@@ -38,8 +38,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ImageFade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorInt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotionMaker/PotionData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotionMaker/PotionMakerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartGameButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotionMaker/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LoadScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TransitionFadeInOut.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,6 +55,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ImageFade.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TransitionFadeInOut.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PotionMaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PotionData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PotionMaker/Ingredient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PotionMaker/PotionData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PotionMaker/PotionMakerManager.cs" />
       </list>
     </option>
   </component>
@@ -65,6 +73,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -75,7 +84,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -100,7 +109,8 @@
       <option name="presentableId" value="Default" />
       <updated>1652715743534</updated>
       <workItem from="1652715762795" duration="1301000" />
-      <workItem from="1652857436181" duration="3070000" />
+      <workItem from="1652857436181" duration="3283000" />
+      <workItem from="1655317716921" duration="4084000" />
     </task>
     <servers />
   </component>
