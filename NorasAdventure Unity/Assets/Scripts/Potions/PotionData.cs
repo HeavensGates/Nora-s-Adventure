@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace PotionMaker
+namespace Potions
 {
     [CreateAssetMenu(menuName ="ScriptableObject/PotionData")]
     public class PotionData : ScriptableObject
     {
+        public PotionEffect potionEffect;
         public Ingredient[] recipe;
         public Sprite potionIcon;
         public Sprite potionBackground;

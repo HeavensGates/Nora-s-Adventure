@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
   m_Name: FirePotion
   m_EditorClassIdentifier: 
+  potionEffect: 3
   recipe: 010000000300000005000000
   potionIcon: {fileID: 21300000, guid: 7b6f16ae2a3d17e449fc4e84e585c31c, type: 3}
   potionBackground: {fileID: 21300000, guid: 5a0c6c3d15326804a80601a67944cbd0, type: 3}

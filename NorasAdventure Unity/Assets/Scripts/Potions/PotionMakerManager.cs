@@ -2,10 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PotionMaker
+namespace Potions
 {
     public class PotionMakerManager : MonoBehaviour
     {
+        [SerializeField] private PotionBag potionBag;
+        
         [SerializeField] private GameObject mushroom;
         [SerializeField] private GameObject eyeball;
         [SerializeField] private GameObject purpleCrystal;
@@ -122,6 +124,7 @@ namespace PotionMaker
             {
                 if (!potion.IsMatchingRecipe(chosenIngredients)) continue;
                 potionCreatedScreen.SetActive(true);
+                potionBag.AddPotionToInventory(potion);
                 potionCreatedBackground.sprite = potion.potionBackground;
                 potionCreatedIcon.sprite = potion.potionIcon;
             }

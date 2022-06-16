@@ -1,4 +1,4 @@
-namespace PotionMaker
+namespace Potions
 {
     public enum Ingredient
     {

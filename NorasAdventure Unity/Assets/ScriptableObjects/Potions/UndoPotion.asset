@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
-  m_Name: GrowthPotion
+  m_Name: UndoPotion
   m_EditorClassIdentifier: 
-  potionEffect: 5
-  recipe: 000000000300000005000000
-  potionIcon: {fileID: 21300000, guid: 28e17a01d850a4e4a90fdfaed997c284, type: 3}
-  potionBackground: {fileID: 21300000, guid: 5a975998da57ebb43b3ce99e1aa2a285, type: 3}
+  potionEffect: 8
+  recipe: 
+  potionIcon: {fileID: 21300000, guid: 7c9c1d7f98088e7488f6e4f34de0437f, type: 3}
+  potionBackground: {fileID: 0}
