@@ -7,6 +7,7 @@ namespace Potions
     public class PotionMakerManager : MonoBehaviour
     {
         [SerializeField] private PotionBag potionBag;
+        [SerializeField] private Animator potionColourCauldron;
         
         [SerializeField] private GameObject mushroom;
         [SerializeField] private GameObject eyeball;
@@ -28,7 +29,9 @@ namespace Potions
 
         private int currentPhase;
         private List<Ingredient> chosenIngredients=new List<Ingredient>();
-    
+        private static readonly int IsRed = Animator.StringToHash("isRed");
+        private static readonly int IsPurple = Animator.StringToHash("isPurple");
+
         public void AddPotionItem(int potionItemId)
         {
             switch (potionItemId)
@@ -59,6 +62,7 @@ namespace Potions
                 case 2:
                     if (currentPhase==1)
                     {
+                        potionColourCauldron.SetBool(IsPurple, true);
                         purpleCrystal.SetActive(false);
                         crystalHighlight.SetActive(false);
                         powderHighlight.SetActive(true);
@@ -70,6 +74,7 @@ namespace Potions
                 case 3:
                     if (currentPhase==1)
                     {
+                        potionColourCauldron.SetBool(IsRed, true);
                         redCrystal.SetActive(false);
                         crystalHighlight.SetActive(false);
                         powderHighlight.SetActive(true);
@@ -103,6 +108,9 @@ namespace Potions
         public void ResetPotionMaker()
         {
             currentPhase=0;
+            
+            potionColourCauldron.SetBool(IsPurple, false);
+            potionColourCauldron.SetBool(IsRed, false);
         
             mushroom.SetActive(true);
             eyeball.SetActive(true);
