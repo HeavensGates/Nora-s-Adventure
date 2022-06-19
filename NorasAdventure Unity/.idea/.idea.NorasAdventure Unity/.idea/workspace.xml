@@ -53,7 +53,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeAnimatorValue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorInt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ImageFade.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" />
@@ -71,6 +70,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionBag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionDragger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionMakerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorInt.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +123,7 @@
       <workItem from="1652857436181" duration="3283000" />
       <workItem from="1655317716921" duration="4084000" />
       <workItem from="1655364961692" duration="6576000" />
-      <workItem from="1655641619572" duration="4508000" />
+      <workItem from="1655641619572" duration="5164000" />
     </task>
     <servers />
   </component>

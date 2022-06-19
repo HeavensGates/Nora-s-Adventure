@@ -10,5 +10,10 @@ namespace SetAnimatorValues
         {
             animator.SetInteger(parameterName, parameterValue);
         }
+
+        public void ChangeSignValue(int givenParameterValue)
+        {
+            parameterValue = givenParameterValue;
+        }
     }
 }
