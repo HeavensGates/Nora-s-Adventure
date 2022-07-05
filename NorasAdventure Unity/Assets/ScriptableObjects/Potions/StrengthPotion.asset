@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
   m_Name: StrengthPotion
   m_EditorClassIdentifier: 
-  potionEffect: 2
+  potionEffect: 3
   recipe: 010000000300000004000000
   potionIcon: {fileID: 21300000, guid: 5ab0f5d4c3f2e3644b601693a8390e4c, type: 3}
   potionBackground: {fileID: 21300000, guid: a9e5921ee680540428a4d45b960e9b96, type: 3}

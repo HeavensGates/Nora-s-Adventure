@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
   m_Name: LevitationPotion
   m_EditorClassIdentifier: 
-  potionEffect: 4
+  potionEffect: 5
   recipe: 000000000300000004000000
   potionIcon: {fileID: 21300000, guid: 126dbb4b54539b04f81df59e39eaba84, type: 3}
   potionBackground: {fileID: 21300000, guid: 2aa4813de0084ef499733b4bb6f65267, type: 3}

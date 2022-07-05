@@ -38,12 +38,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionDragger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorInt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionAcceptor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/DestroyPotion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveToPositionOnClick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartGameButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TransitionFadeInOut.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/BasePotionEffectProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LoadScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ImageFade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionMakerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/FrogPotionEffectProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/NoraPotionEffectProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffect.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,11 +71,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PotionMaker/PotionData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/Ingredient.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionBag.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionDragger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionMakerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SetAnimatorValues/SetAnimatorInt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/FrogPotionEffectProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionAcceptor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/BasePotionEffectProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/NoraPotionEffectProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionBag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/DestroyPotion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionDragger.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +133,9 @@
       <workItem from="1652857436181" duration="3283000" />
       <workItem from="1655317716921" duration="4084000" />
       <workItem from="1655364961692" duration="6576000" />
-      <workItem from="1655641619572" duration="5164000" />
+      <workItem from="1655641619572" duration="7045000" />
+      <workItem from="1656677281529" duration="1312000" />
+      <workItem from="1657040568618" duration="6033000" />
     </task>
     <servers />
   </component>

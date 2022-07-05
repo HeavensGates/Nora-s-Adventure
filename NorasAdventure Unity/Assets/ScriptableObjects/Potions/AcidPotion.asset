@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
   m_Name: AcidPotion
   m_EditorClassIdentifier: 
-  potionEffect: 1
+  potionEffect: 2
   recipe: 010000000200000005000000
   potionIcon: {fileID: 21300000, guid: ed9207e0b3851c144be9ee108d34fb95, type: 3}
   potionBackground: {fileID: 21300000, guid: d3c814c666b299140af5344673848dff, type: 3}

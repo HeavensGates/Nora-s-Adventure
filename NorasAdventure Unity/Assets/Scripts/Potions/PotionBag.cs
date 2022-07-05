@@ -23,15 +23,25 @@ namespace Potions
             UpdatePotionDisplay();
         }
 
-        public void RemovePotionFromInventory(PotionData potion)
+        public void RemovePotionFromInventory(PotionData potion,PotionDragger dragger=null)
         {
-            for(var i = 0; i<createdPotions.Length; i++)
+            if (dragger==null)
             {
-                if (createdPotions[i] != potion) continue;
-                createdPotions[i] = null;
-                break;
+                for (var i = 0; i < createdPotions.Length; i++)
+                {
+                    if (createdPotions[i] != potion) continue;
+                    createdPotions[i] = null;
+                    break;
+                }
             }
-
+            else
+            {
+                var potionIndex = Array.IndexOf(potionDraggers, dragger);
+                if (createdPotions[potionIndex]==potion)
+                {
+                    createdPotions[potionIndex] = null;
+                }
+            }
             UpdatePotionDisplay();
         }
 

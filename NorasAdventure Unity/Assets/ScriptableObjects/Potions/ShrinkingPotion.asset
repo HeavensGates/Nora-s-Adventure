@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076cb8d8b6a9bb641a9537803a2cd20f, type: 3}
   m_Name: ShrinkingPotion
   m_EditorClassIdentifier: 
-  potionEffect: 6
+  potionEffect: 7
   recipe: 000000000200000005000000
   potionIcon: {fileID: 21300000, guid: 2095511367aebe9439c2cbb25fc950b8, type: 3}
   potionBackground: {fileID: 21300000, guid: 7c95db35a02c29f4c8286d034a4122fb, type: 3}

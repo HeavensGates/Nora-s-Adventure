@@ -2,6 +2,7 @@ namespace Potions
 {
     public enum PotionEffect
     {
+        ClearPotion,
         GhostPotion,
         AcidPotion,
         StrengthPotion,
@@ -10,6 +11,5 @@ namespace Potions
         GrowthPotion,
         ShrinkingPotion,
         FreezingPotion,
-        ClearPotion,
     }
 }

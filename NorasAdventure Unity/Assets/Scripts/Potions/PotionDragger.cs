@@ -12,6 +12,7 @@ namespace Potions
         [SerializeField]private Image potionImage;
         [SerializeField]private PotionData potion;
         [SerializeField] private Canvas canvas;
+        [SerializeField] private PotionBag bag;
 
         private Vector3 originalPosition;
 
@@ -59,16 +60,31 @@ namespace Potions
         public void DropHandler(BaseEventData data)
         {
             potionImage.raycastTarget = false;
+            potionImage.enabled = false;
             var potionTarget = GetDraggableTransformUnderMouse();
 
             if (potionTarget!=null)
             {
                 //get the potion target script
-                //give it potion data
-                //let it handle it from there
+                if (potionTarget.TryGetComponent(out PotionAcceptor potionAcceptor))
+                {
+                    //give it potion data
+                    potionAcceptor.AcceptPotion(potion);
+                }
+
+                if (potion.potionEffect != PotionEffect.ClearPotion)
+                {
+                    //get the potion target script
+                    if (potionTarget.TryGetComponent(out DestroyPotion _))
+                    {
+                        //remove potion
+                        bag.RemovePotionFromInventory(potion,this);
+                    }
+                }
             }
             
             transform.position = originalPosition;
+            potionImage.enabled = true;
             potionImage.raycastTarget = true;
 
         }
