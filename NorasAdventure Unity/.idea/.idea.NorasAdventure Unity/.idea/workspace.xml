@@ -76,11 +76,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/FrogPotionEffectProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionAcceptor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/BasePotionEffectProcessor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/NoraPotionEffectProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionBag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/DestroyPotion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionDragger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/NoraPotionEffectProcessor.cs" />
       </list>
     </option>
   </component>
@@ -136,6 +136,7 @@
       <workItem from="1655641619572" duration="7045000" />
       <workItem from="1656677281529" duration="1312000" />
       <workItem from="1657040568618" duration="6033000" />
+      <workItem from="1657217216023" duration="2386000" />
     </task>
     <servers />
   </component>

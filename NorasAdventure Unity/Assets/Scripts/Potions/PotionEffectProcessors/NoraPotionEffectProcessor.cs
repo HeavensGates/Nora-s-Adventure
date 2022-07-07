@@ -5,6 +5,27 @@ namespace Potions.PotionEffectProcessors
 {
     public class NoraPotionEffectProcessor : BasePotionEffectProcessor
     {
+        [SerializeField] private AudioSource audioSource;
+
+        [Header("Nora Noises")] [SerializeField]
+        private AudioClip noraAuch;
+
+        [SerializeField] private AudioClip noraCurious1,
+            noraCurious2,
+            noraFrustrated1,
+            noraFrustrated2,
+            noraHmhm1,
+            noraHmhm2,
+            noraHuh,
+            noraIrritated1,
+            noraIrritated2,
+            noraOh1,
+            noraOh2,
+            noraQuestion1,
+            noraQuestion2,
+            noraWii1,
+            noraWii2;
+
         public override void ProcessEffect(PotionData potionData)
         {
             switch (potionData.potionEffect)
