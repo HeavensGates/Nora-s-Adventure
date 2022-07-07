@@ -75,8 +75,9 @@ namespace Potions
                 if (potion.potionEffect != PotionEffect.ClearPotion)
                 {
                     //get the potion target script
-                    if (potionTarget.TryGetComponent(out DestroyPotion _))
+                    if (potionTarget.TryGetComponent(out DestroyPotion destroyPotion))
                     {
+                        destroyPotion.TrashItemSound();
                         //remove potion
                         bag.RemovePotionFromInventory(potion,this);
                     }
