@@ -33,30 +33,38 @@ namespace Potions.PotionEffectProcessors
                 case PotionEffect.GhostPotion:
                     //nora becomes ghost
                     currentPotionEffect = PotionEffect.GhostPotion;
+                    PlayAudioClip(noraWii2);
                     break;
                 case PotionEffect.AcidPotion:
                     //doesnt work
+                    PlayAudioClip(noraFrustrated1);
                     break;
                 case PotionEffect.StrengthPotion:
                     currentPotionEffect = PotionEffect.StrengthPotion;
+                    PlayAudioClip(noraIrritated2);
                     //strong nora
                     break;
                 case PotionEffect.FirePotion:
                     //doesnt work
+                    PlayAudioClip(noraIrritated1);
                     break;
                 case PotionEffect.LevitationPotion:
                     //nora fly
                     currentPotionEffect = PotionEffect.LevitationPotion;
+                    PlayAudioClip(noraWii1);
                     break;
                 case PotionEffect.GrowthPotion:
                     //nora grow in size
                     currentPotionEffect = PotionEffect.GrowthPotion;
+                    PlayAudioClip(noraIrritated2);
                     break;
                 case PotionEffect.ShrinkingPotion:
                     //nora small
                     currentPotionEffect = PotionEffect.ShrinkingPotion;
+                    PlayAudioClip(noraOh2);
                     break;
                 case PotionEffect.FreezingPotion:
+                    PlayAudioClip(noraFrustrated1);
                     //doesnt work
                     break;
                 case PotionEffect.ClearPotion:
@@ -66,6 +74,29 @@ namespace Potions.PotionEffectProcessors
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+        }
+
+        private void PlayAudioClip(AudioClip audioClip)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
+
+        public bool DestroyPotion(PotionData potionData)
+        {
+            return potionData.potionEffect switch
+            {
+                PotionEffect.GhostPotion => true,
+                PotionEffect.AcidPotion => false,
+                PotionEffect.StrengthPotion => true,
+                PotionEffect.FirePotion => false,
+                PotionEffect.LevitationPotion => true,
+                PotionEffect.GrowthPotion => true,
+                PotionEffect.ShrinkingPotion => true,
+                PotionEffect.FreezingPotion => false,
+                PotionEffect.ClearPotion => false,
+                _ => false
+            };
         }
     }
 }

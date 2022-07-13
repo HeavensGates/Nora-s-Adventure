@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Potions.PotionEffectProcessors;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -74,6 +75,15 @@ namespace Potions
 
                 if (potion.potionEffect != PotionEffect.ClearPotion)
                 {
+                    if (potionTarget.TryGetComponent(out NoraPotionEffectProcessor noraPotionEffectProcessor))
+                    {
+                        if (noraPotionEffectProcessor.DestroyPotion(potion))
+                        {
+                            //remove potion
+                            bag.RemovePotionFromInventory(potion,this);
+                        }
+                    }
+                    
                     //get the potion target script
                     if (potionTarget.TryGetComponent(out DestroyPotion destroyPotion))
                     {
