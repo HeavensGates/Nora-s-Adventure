@@ -5,6 +5,7 @@ namespace Potions.PotionEffectProcessors
 {
     public class NoraPotionEffectProcessor : BasePotionEffectProcessor
     {
+        [SerializeField] private Animator animator;
         [SerializeField] private AudioSource audioSource;
 
         [Header("Nora Noises")] [SerializeField]
@@ -26,50 +27,51 @@ namespace Potions.PotionEffectProcessors
             noraWii1,
             noraWii2;
 
+        private static readonly int IsBuff = Animator.StringToHash("isBuff");
+        private static readonly int IsGhost = Animator.StringToHash("isGhost");
+        private static readonly int IsLevitating = Animator.StringToHash("isLevitating");
+
+        [SerializeField]private Vector2 noraDefaultSize;
+        [SerializeField] private Vector2 noraShrinkedSize=new Vector2(100,200);
+        [SerializeField] private Vector2 noraGrowthedSize=new Vector2(400,800);
+        [SerializeField] private Vector2 noraLevitateSize = new Vector2(282.67f, 580.75f);
+        [SerializeField]private RectTransform rectTransform;
+
+        private void Start()
+        {
+            noraDefaultSize = rectTransform.sizeDelta;
+        }
+
         public override void ProcessEffect(PotionData potionData)
         {
             switch (potionData.potionEffect)
             {
                 case PotionEffect.GhostPotion:
-                    //nora becomes ghost
-                    currentPotionEffect = PotionEffect.GhostPotion;
-                    PlayAudioClip(noraWii2);
+                    GhostEffect();
                     break;
                 case PotionEffect.AcidPotion:
-                    //doesnt work
                     PlayAudioClip(noraFrustrated1);
                     break;
                 case PotionEffect.StrengthPotion:
-                    currentPotionEffect = PotionEffect.StrengthPotion;
-                    PlayAudioClip(noraIrritated2);
-                    //strong nora
+                    BuffEffect();
                     break;
                 case PotionEffect.FirePotion:
-                    //doesnt work
                     PlayAudioClip(noraIrritated1);
                     break;
                 case PotionEffect.LevitationPotion:
-                    //nora fly
-                    currentPotionEffect = PotionEffect.LevitationPotion;
-                    PlayAudioClip(noraWii1);
+                    LevitateEffect();
                     break;
                 case PotionEffect.GrowthPotion:
-                    //nora grow in size
-                    currentPotionEffect = PotionEffect.GrowthPotion;
-                    PlayAudioClip(noraIrritated2);
+                    GrowthEffect();
                     break;
                 case PotionEffect.ShrinkingPotion:
-                    //nora small
-                    currentPotionEffect = PotionEffect.ShrinkingPotion;
-                    PlayAudioClip(noraOh2);
+                    ShrinkEffect();
                     break;
                 case PotionEffect.FreezingPotion:
                     PlayAudioClip(noraFrustrated1);
-                    //doesnt work
                     break;
                 case PotionEffect.ClearPotion:
-                    //removes effect
-                    currentPotionEffect = PotionEffect.ClearPotion;
+                    ClearPotionEffect();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -98,5 +100,66 @@ namespace Potions.PotionEffectProcessors
                 _ => false
             };
         }
+        private void ResetNora()
+        {
+            animator.SetBool(IsBuff, false);
+            animator.SetBool(IsGhost, false);
+            animator.SetBool(IsLevitating, false);
+            gameObject.GetComponent<RectTransform>().sizeDelta = noraDefaultSize;
+        }
+
+        #region PotionEffects
+
+        public void ClearPotionEffect()
+        {
+            //removes effect
+            ResetNora();
+            currentPotionEffect = PotionEffect.ClearPotion;
+        }
+
+
+        private void BuffEffect()
+        {
+            ResetNora();
+            animator.SetBool(IsBuff,true);
+            currentPotionEffect = PotionEffect.StrengthPotion;
+            PlayAudioClip(noraIrritated2);
+        }
+
+        private void GhostEffect()
+        {
+            ResetNora();
+            animator.SetBool(IsGhost,true);
+            currentPotionEffect = PotionEffect.GhostPotion;
+            PlayAudioClip(noraWii2);
+        }
+        
+        private void LevitateEffect()
+        {
+            ResetNora();
+            animator.SetBool(IsLevitating,true);
+            rectTransform.sizeDelta =noraLevitateSize;
+            currentPotionEffect = PotionEffect.LevitationPotion;
+            PlayAudioClip(noraWii1);
+        }
+
+        private void GrowthEffect()
+        {
+            ResetNora();
+            rectTransform.sizeDelta = noraGrowthedSize;
+            currentPotionEffect = PotionEffect.GrowthPotion;
+            PlayAudioClip(noraIrritated2);
+        }
+
+        private void ShrinkEffect()
+        {
+            ResetNora();
+            rectTransform.sizeDelta =noraShrinkedSize;
+            currentPotionEffect = PotionEffect.ShrinkingPotion;
+            PlayAudioClip(noraIrritated2);
+        }
+
+        #endregion
+        
     }
 }
