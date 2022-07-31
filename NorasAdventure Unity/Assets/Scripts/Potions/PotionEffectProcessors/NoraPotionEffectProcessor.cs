@@ -1,7 +1,8 @@
 using System;
+using Potions;
 using UnityEngine;
 
-namespace Potions.PotionEffectProcessors
+namespace PotionEffectProcessors
 {
     public class NoraPotionEffectProcessor : BasePotionEffectProcessor
     {
@@ -84,7 +85,7 @@ namespace Potions.PotionEffectProcessors
             audioSource.Play();
         }
 
-        public bool DestroyPotion(PotionData potionData)
+        public static bool DestroyPotion(PotionData potionData)
         {
             return potionData.potionEffect switch
             {
@@ -110,7 +111,7 @@ namespace Potions.PotionEffectProcessors
 
         #region PotionEffects
 
-        public void ClearPotionEffect()
+        public override void ClearPotionEffect()
         {
             //removes effect
             ResetNora();
@@ -118,7 +119,7 @@ namespace Potions.PotionEffectProcessors
         }
 
 
-        private void BuffEffect()
+        public override void BuffEffect()
         {
             ResetNora();
             animator.SetBool(IsBuff,true);
@@ -126,7 +127,7 @@ namespace Potions.PotionEffectProcessors
             PlayAudioClip(noraIrritated2);
         }
 
-        private void GhostEffect()
+        public override void GhostEffect()
         {
             ResetNora();
             animator.SetBool(IsGhost,true);
@@ -134,7 +135,7 @@ namespace Potions.PotionEffectProcessors
             PlayAudioClip(noraWii2);
         }
         
-        private void LevitateEffect()
+        public override void LevitateEffect()
         {
             ResetNora();
             animator.SetBool(IsLevitating,true);
@@ -143,7 +144,7 @@ namespace Potions.PotionEffectProcessors
             PlayAudioClip(noraWii1);
         }
 
-        private void GrowthEffect()
+        public override void GrowthEffect()
         {
             ResetNora();
             rectTransform.sizeDelta = noraGrowthedSize;
@@ -151,7 +152,7 @@ namespace Potions.PotionEffectProcessors
             PlayAudioClip(noraIrritated2);
         }
 
-        private void ShrinkEffect()
+        public override void ShrinkEffect()
         {
             ResetNora();
             rectTransform.sizeDelta =noraShrinkedSize;

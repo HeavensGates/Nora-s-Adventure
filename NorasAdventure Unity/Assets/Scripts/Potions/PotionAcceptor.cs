@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using PotionEffectProcessors;
 using Potions;
-using Potions.PotionEffectProcessors;
 using UnityEngine;
 
 public class PotionAcceptor : MonoBehaviour
