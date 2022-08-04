@@ -150,7 +150,7 @@ namespace PotionEffectProcessors
             gameObject.GetComponent<RectTransform>().sizeDelta = defaultSize;
         }
 
-        public static bool DestroyPotion(PotionData potionData)
+        public override bool DestroyPotion(PotionData potionData)
         {
             return potionData.potionEffect switch
             {

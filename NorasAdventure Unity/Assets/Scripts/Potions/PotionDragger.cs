@@ -75,9 +75,9 @@ namespace Potions
 
                 if (potion.potionEffect != PotionEffect.ClearPotion)
                 {
-                    if (potionTarget.TryGetComponent(out NoraPotionEffectProcessor noraPotionEffectProcessor))
+                    if (potionTarget.TryGetComponent(out BasePotionEffectProcessor basePotionEffectProcessor))
                     {
-                        if (NoraPotionEffectProcessor.DestroyPotion(potion))
+                        if (basePotionEffectProcessor.DestroyPotion(potion))
                         {
                             //remove potion
                             bag.RemovePotionFromInventory(potion,this);

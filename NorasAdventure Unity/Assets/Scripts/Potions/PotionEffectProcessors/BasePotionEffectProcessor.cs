@@ -11,6 +11,11 @@ namespace PotionEffectProcessors
             Debug.LogWarning("You should not see this, make sure you are using the correct effect processor");
         }
 
+        public virtual bool DestroyPotion(PotionData potionData)
+        {
+            return false;
+        }
+
         #region PotionEffects
 
         public virtual void GhostEffect()

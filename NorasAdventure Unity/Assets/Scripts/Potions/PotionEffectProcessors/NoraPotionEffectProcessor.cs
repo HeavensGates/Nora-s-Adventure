@@ -85,7 +85,7 @@ namespace PotionEffectProcessors
             audioSource.Play();
         }
 
-        public static bool DestroyPotion(PotionData potionData)
+        public override bool DestroyPotion(PotionData potionData)
         {
             return potionData.potionEffect switch
             {
