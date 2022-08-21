@@ -49,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionMakerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/FrogPotionEffectProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/NoraPotionEffectProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/RiverPotionEffectProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffect.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,6 +82,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/BasePotionEffectProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/NoraPotionEffectProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionDragger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potions/PotionEffectProcessors/RiverPotionEffectProcessor.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +143,8 @@
       <workItem from="1657734730554" duration="2158000" />
       <workItem from="1658142906879" duration="4639000" />
       <workItem from="1659296598187" duration="4455000" />
-      <workItem from="1659632864309" duration="421000" />
+      <workItem from="1659632864309" duration="2081000" />
+      <workItem from="1661092418005" duration="1769000" />
     </task>
     <servers />
   </component>

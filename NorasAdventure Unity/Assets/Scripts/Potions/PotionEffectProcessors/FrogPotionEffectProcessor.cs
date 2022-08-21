@@ -1,6 +1,7 @@
 using System;
 using Potions;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace PotionEffectProcessors
 {
@@ -8,6 +9,7 @@ namespace PotionEffectProcessors
     {
         [SerializeField] private Animator animator;
         [SerializeField] private AudioSource audioSource;
+        [SerializeField] private Image signImage;
         
         [Header("Frog Noises")] [SerializeField]
         private AudioClip frog;
@@ -90,6 +92,7 @@ namespace PotionEffectProcessors
             animator.SetBool(IsMelted,true);
             currentPotionEffect = PotionEffect.AcidPotion;
             PlayAudioClip(frogCryLong);
+            signImage.raycastTarget = true;
             isCleared = true;
         }
 
@@ -107,6 +110,7 @@ namespace PotionEffectProcessors
             animator.SetBool(IsBurnt,true);
             currentPotionEffect = PotionEffect.FirePotion;
             PlayAudioClip(frogCryLong2);
+            signImage.raycastTarget = true;
             isCleared = true;
         }
 
@@ -132,6 +136,7 @@ namespace PotionEffectProcessors
             rectTransform.sizeDelta = shrinkedSize;
             currentPotionEffect = PotionEffect.ShrinkingPotion;
             PlayAudioClip(frogAngry);
+            signImage.raycastTarget = true;
             isCleared = true;
         }
 
@@ -141,6 +146,7 @@ namespace PotionEffectProcessors
             animator.SetBool(IsFrozen,true);
             currentPotionEffect = PotionEffect.FreezingPotion;
             PlayAudioClip(frog);
+            signImage.raycastTarget = true;
             isCleared = true;
         }
 
